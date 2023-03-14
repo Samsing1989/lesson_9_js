@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+  </head>
+
+  <body>
+    <h1>Задача 5</h1>
+    <p>Дано масив елементів. Знайти добуток додатних елементів</p>
+
+    <script>
+      let numberOfElements = [5, 9, 6, -30, 4, 2, -60, 2]
+      function getArray(arrayElement) {
+        let productElement = 1
+        for (const numb of numberOfElements) {
+          if (numb > 0) productElement = numb * productElement
+        }
+        return productElement
+      }
+      document.write(
+        `маcив з якого вираховується ${numberOfElements} <br> результат добутку ${getArray()}`
+      )
+    </script>
+  </body>
+</html>
